@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cardapios",
+      "handler": "Cardapio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cardapios/count",
+      "handler": "Cardapio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cardapios/:_id",
+      "handler": "Cardapio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cardapios",
+      "handler": "Cardapio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cardapios/:_id",
+      "handler": "Cardapio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cardapios/:_id",
+      "handler": "Cardapio.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

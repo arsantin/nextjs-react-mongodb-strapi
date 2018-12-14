@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "cardapio",
+  "info": {
+    "name": "cardapio",
+    "description": "Cria um ítem de cardápio"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "default": "",
+      "type": "string"
+    },
+    "descricao": {
+      "default": "",
+      "type": "text"
+    },
+    "valor": {
+      "default": "",
+      "type": "integer"
+    },
+    "trucks": {
+      "model": "trucks",
+      "via": "cardapios"
+    },
+    "imagem": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

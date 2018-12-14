@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "trucks",
+  "info": {
+    "name": "trucks",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "default": "",
+      "type": "string"
+    },
+    "descricao": {
+      "default": "",
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "cardapios": {
+      "collection": "cardapio",
+      "via": "trucks"
+    }
+  }
+}
